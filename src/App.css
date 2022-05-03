@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+* {
+  box-sizing: border-box;
+  color: #1d1f22;
+}
+
+body,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  overflow: overlay;
+}
+
+body.noScroll {
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+main {
+  /* If header is fixed */
+  padding-top: calc(80px + 79px);
+  /* else uncomment this */
+  /* padding-top: 80px; */
+  margin-bottom: 150px;
+}
+
+.container {
+  margin: auto;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b6b6b6;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5ece7b;
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.shadow {
+  box-shadow: 0px 4px 15px rgba(168, 172, 176, 0.45);
+  /* This one below is from design, but it looks a bit ugly,
+  so I modified it a little, you can use either of them */
+  /* box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19); */
+}
+
+.error-message {
+  margin-top: calc(80px + 79px);
+  color: red;
+  text-align: center;
+}
