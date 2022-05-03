@@ -1,4 +1,4 @@
-# E-commerce sample website
+# E-commerce
 
 ### How to start
 
