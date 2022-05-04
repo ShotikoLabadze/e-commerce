@@ -33,7 +33,11 @@ class App extends React.Component {
             <Route
               path="/"
               element={
-                <Layout categories={this.props.data.categories.map((category) => category.name)} />
+                <Layout
+                  categories={this.props.data.categories.map(
+                    (category) => category.name
+                  )}
+                />
               }
             >
               <Route path="/" element={<ProductList categoryName="all" />} />
